@@ -55,6 +55,6 @@ app.delete("/tareas/:id", (req, res) => {
   res.json({ message: "Tarea eliminada" });
 });
 
-app.listen(port, () => {
-  console.log(`Servidor corriendo en localhost:${port}`);
+app.listen(3000, "0.0.0.0", () => {
+  console.log("Servidor corriendo en 0.0.0.0:3000");
 });
